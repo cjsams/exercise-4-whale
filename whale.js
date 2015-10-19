@@ -1,3 +1,5 @@
+jQuery(document).ready(function($) {
+  function update() {
 jQuery(document).ready(function($){
   var num = parseInt(location.hash.substr(1));
   if (isNaN(num)) {
@@ -8,4 +10,8 @@ jQuery(document).ready(function($){
     $('a').html(txt);
     $('a').attr('href', '#' + (num + 1));
   });
+});
+}
+  update();
+  window.addEventListener('hashchange', update, false);
 });
