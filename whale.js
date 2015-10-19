@@ -4,8 +4,7 @@ jQuery(document).ready(function($){
     num = 0;
   }
   console.log(num);
-});
-$.get('/whale/txt/' + num + '.txt', function(txt)){
-  $('a').html(txt);
-  $('a').attr('href', '#' + (num + 1));
+  $.get('/whale/txt/' + num + '.txt', function(txt)){
+    console.log(txt);
+  });
 });
