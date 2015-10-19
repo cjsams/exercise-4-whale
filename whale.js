@@ -9,8 +9,4 @@ jQuery(document).ready(function($){
     $('a').html(txt);
     $('a').attr('href', '#' + (num + 1));
   });
-
-  if (isNaN(num)) {
-    num = 0;
-  }
 });
